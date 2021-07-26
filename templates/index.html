@@ -1,15 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Community Events Board</title>
+        <!-- Compiled and minified CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="style.css" />
     </head>
+
     <body>
-      <h1>Community Events Board</h1>
-      <div class="event-list">
-        <ul>
-          {% for event in events %}
-            <li>{{ event.event }} - {{ event.date }}</li>
-          {% endfor %}
-        </ul>
-      </div>
+    <!-- SIDE NAV BAR -->
+        <div class="sidenav-header">
+            <p>Shop</p>
+        </div>
+        <div class="sidenav-body">
+            <ul class="cat-list">
+                <a class="list-a" href="/shop/all"> All Categories</a>
+                <a class="list-a" href="/shop/featured"> Featured Items</a>
+                <a class="list-a" href="/shop/clothing"> Clothing</a>
+                    <ul class="sub-list">
+                        <a class="list-b" href="/shop/men"> Men</a>
+                            <ul class="sub-sub-list">
+                                <a class="list-c" href="/shop/men/tops"> Tops</a>
+                                <a class="list-c" href="/shop/men/bottoms"> Bottoms</a>
+                                <a class="list-c" href="/shop/men/suits"> Suits</a>
+                            </ul>
+                        <a class="list-b" href="/shop/women"> Women</a>
+                            <ul class="sub-sub-list">
+                                <a class="list-c" href="/shop/women/tops"> Tops</a>
+                                <a class="list-c" href="/shop/women/bottoms"> Bottoms</a>
+                                <a class="list-c" href="/shop/women/dresses"> Dresses</a>
+                            </ul>
+                        <a class="list-b" href="/shop/accessories"> Accessories</a>
+                    </ul>
+                <a class="list-a" href="/shop/education"> Education</a>
+                    <ul class="sub-list">
+                        <a class="list-b" href="/shop/new-textbooks"> New Textbooks</a>
+                        <a class="list-b" href="/shop/used-textbooks"> Used Textbooks</a>
+                        <a class="list-b" href="/shop/supplies"> School Supplies</a>
+                    </ul>
+                <a class= "list-a" href="/shop/electronics"> Electronics</a>
+                     <ul class="sub-list">
+                        <a class="list-b" href="/shop/computers"> Computers and Tablets</a>
+                        <a class="list-b" href="/shop/phones"> Cell Phones</a>
+                        <a class="list-b" href="/shop/tv"> TVs</a>
+                        <a class="list-b" href="/shop/music"> Sound Systems</a>
+                        <a class="list-b" href="/shop/video-games"> Video Games</a>
+                    </ul>
+                <a class= "list-a" href="/shop/furniture"> Furniture</a>
+                <a class="list-a" href="/shop/sports"> Sporting Goods</a>
+                <a class="list-a" href="/shop/vehicles"> Vehicles</a>
+                    <ul class="sub-list">
+                        <a class="list-b" href="/shop/bikes"> Bikes and Scooters</a>
+                        <a class="list-b" href="/shop/cars"> Cars</a>
+                    </ul>
+                <a class="list-a" href="/shop/featured"> Miscellaneous</a>
+            </ul>
+        </div>
+
+
     </body>
+
 </html>
