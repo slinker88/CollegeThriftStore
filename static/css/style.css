@@ -1,0 +1,75 @@
+h2 {
+    color:black;
+}
+
+#center_nav {
+  margin-bottom:auto;
+}
+.ml-auto {
+    margin-left: auto !important
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:100px;
+}
+
+#center_nav {
+  margin-bottom:auto;
+}
+.ml-auto {
+    margin-left: auto !important
+}
+
+#footer {
+   position: absolute;
+   bottom:0;
+   width:100%;
+   height:90px;
+   position: relative;
+}
+
+/* SIDE NAV BAR */
+#sidenav-header {
+    background-color: rgba(0,0,0,.03);
+    border: 1px solid rgba(0,0,0,.125);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+#sidenav-body {
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 187, 0);
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+br {
+    content: "";
+}
+/* END SIDE NAV BAR */
+
+#gallery-title {
+    text-align: left;
+}
