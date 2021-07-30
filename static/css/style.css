@@ -1,5 +1,6 @@
 
 
+
 #center_nav {
   margin-bottom:auto;
 }
@@ -17,6 +18,7 @@
   
    
 }
+
 
 /* SIDE NAV BAR */
 #sidenav-header {
@@ -53,7 +55,9 @@ br {
 
 
 
+
 /* LOG IN AND REGISTRATION */
+
 
 .social-login img {
   width: 24px;
@@ -161,9 +165,11 @@ input[type="password"] {
   display: block;
 }
 
+
 /* END OF LOG IN AND REGISTRATION */
 
 /* DARK MODE STYLING */
+
 
 /* :root {
   --white: #f0f0f0;
@@ -192,9 +198,11 @@ input[type="password"] {
   transition: background .5s ease;
 }
 
+
 .checkbox {
   display: none;
 }
+
 
 .label {
   display: flex;
@@ -224,6 +232,7 @@ input[type="password"] {
   transition: transform 0.5s ease, background-color 0.5s ease;
 }
 
+
 .fa-galactic-republic {
   color: var(--black);
 }
@@ -239,11 +248,13 @@ input[type="password"] {
   font-size: clamp(10rem, 80vw, 80vh);
   transition: opacity 0.3s ease-in-out 0.5s;
 }
+
  
 
 .checkbox:checked + .content .label .ball {
   transform: translateX(2.5rem);
 }
+
 
 .checkbox:checked + .content {
   --bg: var(--black);
@@ -270,6 +281,7 @@ margin-top: 4px;
 border-radius:10px;
 }
 
+
 .dark-mode {
     filter: invert(1) hue-rotate(180deg)
 }
@@ -283,6 +295,7 @@ border-radius:10px;
 
 
 /* Cards */
+
 
 
 
@@ -321,16 +334,13 @@ border-radius:10px;
     object-fit: cover;
 }
 
-
-
-
-
-
 .button {
   position: relative;
   padding: 8px 16px;
   margin-left: 700px;
+
   margin-top:350px;
+
   background: #20693F;
   border: none;
   outline: none;
@@ -371,6 +381,8 @@ border-radius:10px;
   to {
     transform: rotate(1turn);
   }
+
 }
+
 
 
