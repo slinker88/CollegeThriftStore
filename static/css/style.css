@@ -1,15 +1,25 @@
+
+
+
 #center_nav {
   margin-bottom:auto;
 }
+
 .ml-auto {
     margin-left: auto !important
 }
+
+
 #footer {
    position:absolute;
-   bottom:-450;
+   bottom:-250;
    width:100%;
    height:100px; 
+  
+   
 }
+
+
 /* SIDE NAV BAR */
 #sidenav-header {
     background-color: rgba(0,0,0,.03);
@@ -42,13 +52,20 @@ br {
     content: "";
 }
 /* END SIDE NAV BAR */
+
+
+
+
 /* LOG IN AND REGISTRATION */
+
+
 .social-login img {
   width: 24px;
 }
 a {
   text-decoration: none;
 }
+
 .card {
   font-family: sans-serif!important;
   width: 400px;
@@ -61,6 +78,7 @@ a {
   padding: 1.8rem;
   box-shadow: 2px 15px 20px rgba(0, 0, 0, 0.1);
 }
+
 .title {
   text-align: center;
   font-weight: bold;
@@ -73,11 +91,13 @@ a {
 .btn-text {
   margin: 0;
 }
+
 .social-login {
   display: flex;
   justify-content: center;
   gap: 5px;
 }
+
 .google-btn {
   background: #fff;
   border: solid 2px rgb(245 239 239);
@@ -98,6 +118,7 @@ a {
   display: flex;
   align-items: center;
 }
+
 .or {
   text-align: center;
   font-weight: bold;
@@ -109,6 +130,7 @@ a {
   background: #fff;
   padding: 0 10px;
 }
+
 .email-login {
   display: flex;
   flex-direction: column;
@@ -116,6 +138,7 @@ a {
 .email-login label {
   color: rgb(170 166 166);
 }
+
 input[type="text"],
 input[type="password"] {
   padding: 15px 20px;
@@ -125,6 +148,7 @@ input[type="password"] {
   border-radius: 8px;
   box-sizing: border-box;
 }
+
 .cta-btn {
   background-color: rgb(69, 69, 185);
   color: white;
@@ -135,12 +159,18 @@ input[type="password"] {
   border-radius: 10px;
   border: none;
 }
+
 .forget-pass {
   text-align: center !important;
   display: block;
 }
+
+
 /* END OF LOG IN AND REGISTRATION */
+
 /* DARK MODE STYLING */
+
+
 /* :root {
   --white: #f0f0f0;
   --light-grey: #e4e4e4;
@@ -151,11 +181,13 @@ input[type="password"] {
   --dark-opacity: 0;
   --light-opacity: 1;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .content {
   background-color: var(--bg);
   color: var(--txt);
@@ -165,9 +197,13 @@ input[type="password"] {
   min-height: 25vh;
   transition: background .5s ease;
 }
+
+
 .checkbox {
   display: none;
 }
+
+
 .label {
   display: flex;
   align-items: left;
@@ -183,6 +219,7 @@ input[type="password"] {
   cursor: pointer;
   z-index: 1;
 }
+
 .label .ball {
   position: absolute;
   background-color: var(--bg);
@@ -194,26 +231,38 @@ input[type="password"] {
   transform: translateX(0);
   transition: transform 0.5s ease, background-color 0.5s ease;
 }
+
+
 .fa-galactic-republic {
   color: var(--black);
 }
+
 .fa-rebel {
   color: var(--white);
 }
+
+
+
 .image .fab {
   position: absolute;
   font-size: clamp(10rem, 80vw, 80vh);
   transition: opacity 0.3s ease-in-out 0.5s;
 }
+
+ 
+
 .checkbox:checked + .content .label .ball {
   transform: translateX(2.5rem);
 }
+
+
 .checkbox:checked + .content {
   --bg: var(--black);
   --txt: var(--white);
   --dark-opacity: 1;
   --light-opacity: 0;
 } */
+
 /* END OF DARK MODE STYLING */
 .image {
   position: absolute;
@@ -225,18 +274,31 @@ input[type="password"] {
   align-items: center;
   justify-content: center;
 }
+
 img {
 margin:10px;
 margin-top: 4px;
 border-radius:10px;
 }
+
+
 .dark-mode {
     filter: invert(1) hue-rotate(180deg)
 }
+
+
 /* body {
     background-color: black;
 } */
+
+
+
+
 /* Cards */
+
+
+
+
 /* GALLERY */
 .container {
     max-width: 1440px;
@@ -253,6 +315,7 @@ border-radius:10px;
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
 } 
+
 /* .gallery-item:hover .gallery-item-info, */
 .gallery-item:focus .gallery-item-info {
     display: flex;
@@ -264,16 +327,20 @@ border-radius:10px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 .gallery-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .button {
   position: relative;
   padding: 8px 16px;
   margin-left: 700px;
-  margin-top:250px;
+
+  margin-top:350px;
+
   background: #20693F;
   border: none;
   outline: none;
@@ -314,4 +381,8 @@ border-radius:10px;
   to {
     transform: rotate(1turn);
   }
+
 }
+
+
+
