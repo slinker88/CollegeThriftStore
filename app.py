@@ -25,7 +25,7 @@ app = Flask(__name__)
 # name of database
 app.config['MONGO_DBNAME'] = 'login'
 # URI of database
-app.config['MONGO_URI'] = 'mongodb+srv://admin_1:TJ3mIWlbo1eAXnAc@cluster0.6yt5n.mongodb.net/login?retryWrites=true&w=majority'
+app.config['MONGO_URI'] = 'mongodb+srv://admin_1:iQOpVGRWelVQUfiU@cluster0.6yt5n.mongodb.net/login?retryWrites=true&w=majority'
 mongo = PyMongo(app)
 # -- Routes section --
 # INDEX
@@ -55,19 +55,19 @@ def Login():
     if 'username' in session:
         return 'You are logged in as ' + session['username']
 #Sign up information page
-@app.route('/Login', methods = ['GET', 'POST'])
-@app.route('/Login')
-def Login():
-    if 'username' in session:
-        return 'You are logged in as' + session['username']
-    return render_template('Login.html')
-    return """<h1>Set up information for login/sign up page</h1>"""
-@app.route('/login', methods=['POST'])
-@app.route('/Login')
-def index():
-    if 'username' in session:
-        return 'You are logged in as ' + session['username']
-    return render_template('Login.html')
+# @app.route('/Login', methods = ['GET', 'POST'])
+# @app.route('/Login')
+# def Login():
+#     if 'username' in session:
+#         return 'You are logged in as' + session['username']
+#     return render_template('Login.html')
+    # return """<h1>Set up information for login/sign up page</h1>"""
+# @app.route('/login', methods=['POST'])
+# @app.route('/Login')
+# def index():
+#     if 'username' in session:
+#         return 'You are logged in as ' + session['username']
+#     return render_template('Login.html')
 @app.route('/login', methods=['POST' , 'GET'])
 def login():
     if request.method == 'POST':
