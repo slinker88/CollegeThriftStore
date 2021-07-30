@@ -1,15 +1,448 @@
-<html>
+<html class = 'dark-mode'>
     <head>
-        <title>Community Events Board</title>
+        <title>Big Thrift Energy</title>
+        <!-- importing bootstrap to html file -->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- linking css to html file. -->
+         <!-- <link rel="stylesheet" href="style.css"> -->
+          <link rel="stylesheet" type="text/css" href="static/css/style.css?q={{ time }}" />
+
     </head>
+
     <body>
-      <h1>Community Events Board</h1>
-      <div class="event-list">
-        <ul>
-          {% for event in events %}
-            <li>{{ event.event }} - {{ event.date }}</li>
-          {% endfor %}
-        </ul>
+        
+
+        <!-- Search nav bar with contents -->
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img src="../static/photos/energy.png" width = "200px"></a> 
+                <div class="container-fluid"> 
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="myAccount">My Account</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Sell">Sell</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Balance">Balance</a>
+                            </li>
+
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End Search nav bar with contents -->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Info">Info</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Deals">Deals of the week</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Cart">Shopping Cart</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- <img src = "../static/photos/website.png" width= "200px"> -->
+
+
+
+
+
+
+
+
+
+
+  
+<!-- DARK MODE TOGGLE FUNCTION -->
+        <!-- <div>
+            <input type="checkbox" class="checkbox" id="check" />
+                <div class="content">
+                    <label class="label" for="check">
+                        <i class="fab fa-galactic-republic"></i>
+                        <i class="fab fa-rebel"></i>
+                            <div class="ball"></div>
+                    </label>
+                    <span class="image">
+                        <i class="fab fa-galactic-republic"></i>
+                        <i class="fab fa-rebel"></i>
+                    </span>
+                </div>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+        <!-- END OF DARK MODE TOGGLE FUNCTION -->
+
+
+
+<!-- Cards -->
+<!-- GALLERY -->
+<div class="layout-row">
+    <div class="layout-column">
+        <section class="recently-added">
+            <div class="container">
+                <div class="productspace">
+                    <h4>Recently Added</h4>
+                    <hr>
+                </div>
+                <div class="row justify-content-lg-between">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" style="margin-bottom: 2rem;"> 
+                        <div class="gallery" >
+                            <div class="gallery-item" tabindex="0">
+                                <img src="https://images.craigslist.org/00F0F_hDq8cv9qnfZz_0wm0CI_600x450.jpg" 
+                                class="gallery-image" alt="">
+                                <!-- <div class="gallery-item-info">
+                                            <ul>
+                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="far fa-heart" aria-hidden="true"></i> 6</li>
+                                            <li class="gallery-item-comments"><span class="visually-hidden">Views:</span><i class="far fa-eye" aria-hidden="true"></i> 100</li>
+                                            </ul>
+                                </div> -->
+                                <div class="d-flex flex-column pt-2 flex-lg-row justify-content-between">
+                                    <div class="d-flex flex-column">
+                                            <span class="gallery-item-listing">Children Textbook</span>
+                                            <span class="gallery-item-listing-user">GatorGirl101</span>
+                                    </div>
+                                <div class="d-flex flex-column pt-2 flex-lg-row justify-content-between">
+                                    <div class="d-flex flex-column">
+                                        <span class="gallery-item-price">$10</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Second Item -->
+
+
+
+
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" style="margin-bottom: 2rem;"> 
+                        <div class="gallery" >
+                            <div class="gallery-item" tabindex="0">
+                                <img src="https://images.craigslist.org/00W0W_j74jgXEI5Q3z_0t20CI_600x450.jpg" 
+                                class="gallery-image" alt="">
+                                <!-- <div class="gallery-item-info">
+                                            <ul>
+                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="far fa-heart" aria-hidden="true"></i> 6</li>
+                                            <li class="gallery-item-comments"><span class="visually-hidden">Views:</span><i class="far fa-eye" aria-hidden="true"></i> 100</li>
+                                            </ul>
+                                </div> -->
+                                <div class="d-flex flex-column pt-2 flex-lg-row justify-content-between">
+                                    <div class="d-flex flex-column">
+                                            <span class="gallery-item-listing">Standard mini fridge</span>
+                                            <span class="gallery-item-listing-user">Kate198</span>
+                                    </div>
+                                    <div class="d-flex flex-column pt-2 flex-lg-row justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="gallery-item-price" >$40</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                <!-- Third Item -->
+
+
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" style="margin-bottom: 2rem;"> 
+                        <div class="gallery" >
+                            <div class="gallery-item" tabindex="0">
+                                <img src="https://i.ebayimg.com/images/g/bXgAAOSwxZthAy2A/s-l500.jpg" 
+                                class="gallery-image" alt="">
+                                <!-- <div class="gallery-item-info">
+                                            <ul>
+                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="far fa-heart" aria-hidden="true"></i> 6</li>
+                                            <li class="gallery-item-comments"><span class="visually-hidden">Views:</span><i class="far fa-eye" aria-hidden="true"></i> 100</li>
+                                            </ul>
+                                </div> -->
+                                <div class="d-flex flex-column pt-2 flex-lg-row justify-content-between">
+                                    <div class="d-flex flex-column">
+                                            <span class="gallery-item-listing" height="200px" width= "200px">Cracking the Coding Interview Book</span>
+                                            <span class="gallery-item-listing-user">John878</span>
+                                    </div>
+                                    <div class="d-flex flex-column pt-2 flex-lg-row justify-content-between">
+                                    <div class="d-flex flex-column">
+                                        <span class="gallery-item-price" >$15</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+        </section>
+
+
+
+<!-- END Cards -->
+
+
+
+
+
+
+
+<!-- Side navigation bar -->
+
+    <!-- SIDE NAV BAR -->
+        <!-- <div id="sidenav-header" data-content-field="navigation" style="width:15%">
+            <p class="header-title"> Shop</p>
+        </div>
+        <div id="sidenav-body" style="width:11%">
+            <ul class="cat-list">
+                <a class="list-a" href="/shop/all"> All Categories</a> <br></br>
+                <a class="list-a" href="/shop/featured"> Featured Items</a> <br></br>
+                <a class="list-a" href="/shop/clothing"> Clothing</a> 
+                    <ul class="sub-list">
+                        <a class="list-b" href="/shop/men"> Men</a>
+                            <ul class="sub-sub-list">
+                                <a class="list-c" href="/shop/men/tops"> Tops</a>
+                                <a class="list-c" href="/shop/men/bottoms"> Bottoms</a>
+                                <a class="list-c" href="/shop/men/suits"> Suits</a>
+                            </ul>
+                        <a class="list-b" href="/shop/women"> Women</a>
+                            <ul class="sub-sub-list">
+                                <a class="list-c" href="/shop/women/tops"> Tops</a>
+                                <a class="list-c" href="/shop/women/bottoms"> Bottoms</a>
+                                <a class="list-c" href="/shop/women/dresses"> Dresses</a>
+                            </ul>
+                        <a class="list-b" href="/shop/accessories"> Accessories</a> <br></br>
+                    </ul>
+                <a class="list-a" href="/shop/education"> Education</a>
+                    <ul class="sub-list">
+                        <a class="list-b" href="/shop/new-textbooks"> New Textbooks</a>
+                        <a class="list-b" href="/shop/used-textbooks"> Used Textbooks</a>
+                        <a class="list-b" href="/shop/supplies"> School Supplies</a> <br></br>
+                    </ul>
+                <a class= "list-a" href="/shop/electronics"> Electronics</a> 
+                     <ul class="sub-list">
+                        <a class="list-b" href="/shop/computers"> Computers and Tablets</a>
+                        <a class="list-b" href="/shop/phones"> Cell Phones</a>
+                        <a class="list-b" href="/shop/tv"> Televisions</a>
+                        <a class="list-b" href="/shop/music"> Sound</a>
+                        <a class="list-b" href="/shop/video-games"> Gaming</a> <br></br>
+                    </ul>
+                <a class= "list-a" href="/shop/furniture"> Furniture</a> <br></br>
+                <a class="list-a" href="/shop/sports"> Sporting Goods</a> <br></br>
+                <a class="list-a" href="/shop/vehicles"> Vehicles</a>
+                    <ul class="sub-list">
+                        <a class="list-b" href="/shop/bikes"> Bikes and Scooters</a> 
+                        <a class="list-b" href="/shop/cars"> Cars</a> <br></br>
+                    </ul>
+                <a class="list-a" href="/shop/featured"> Miscellaneous</a>
+            </ul>
+        </div> -->
+    <!-- END SIDE NAV BAR -->
+
+<!-- End of Side navigation bar -->
+
+
+
+
+
+
+
+<!-- Button Load More -->
+
+<!-- <div class="row justify-content-lg-between"> -->
+<button type="button" class="button" onclick="this.classList.toggle('button--loading')">
+    <span class="button__text">Load More</span>
+</button>
+<!-- </div> -->
+
+<!-- End Button Load More -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- class="text-center text-lg-start bg-light text-muted" -->
+<footer id = "footer">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <!-- <span>Big Thrift Store :</span> -->
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            This website is made for college students looking in to sell or buy items that they need, this can include selling old unwanted textbooks that incoming students might need or clothing.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Clothing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Textbooks</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Calculus Textbooks</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">English Textbooks</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 12345, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            user123@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i>123 456 7890</p>
+          <p><i class="fas fa-print me-3"></i>123 456 7890</p>
+        </div>
+        <!-- Grid column -->
       </div>
-    </body>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Bigthriftenergy.com </a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+<!-- Footer -->
+
+
+</body>
 </html>
